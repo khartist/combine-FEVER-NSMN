@@ -28,20 +28,20 @@ fi
 
 cd ${DIR_TMP}/data/fever
 if [[ ! -f shared_task_dev.jsonl ]]; then
-    wget https://s3-eu-west-1.amazonaws.com/fever.public/shared_task_dev.jsonl
+    wget hthttps://fever.ai/download/fever/shared_task_dev.jsonl
 fi
 
 if [[ ! -f train.jsonl ]]; then
-    wget https://s3-eu-west-1.amazonaws.com/fever.public/train.jsonl
+    wget https://fever.ai/download/fever/train.jsonl
 fi
 
 if [[ ! -f shared_task_test.jsonl ]]; then
-    wget https://s3-eu-west-1.amazonaws.com/fever.public/shared_task_test.jsonl
+    wget https://fever.ai/download/fever/shared_task_test.jsonl
 fi
 
 cd ${DIR_TMP}/data
 if [[ ! -d wiki-pages ]]; then
-    wget https://s3-eu-west-1.amazonaws.com/fever.public/wiki-pages.zip
+    wget https://fever.ai/download/fever/wiki-pages.zip
     unzip "wiki-pages.zip" && rm "wiki-pages.zip" && rm "__MACOSX"
 fi
 
